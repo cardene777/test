@@ -18,5 +18,5 @@ docker-compose -f docker-compose.development.yml exec app python manage.py migra
 docker-compose -f docker-compose.development.yml exec app python manage.py collectstatic --no-input --clear
 
 ### admin
-docker-compose -f docker-compose.development.yml exec app python manage.py createsuperuser
+docker-compose -f docker-compose.development.yml exec app python manage.py createsuperuser  
 http://localhost:1337/admin/login/
