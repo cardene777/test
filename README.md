@@ -1,6 +1,11 @@
 # test
 - django test repository
 
+### chmod
+```
+chmod +x entrypoint.sh
+```
+
 # docker command
 
 ### build
