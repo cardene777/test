@@ -4,7 +4,7 @@ django test repository
 # docker command
 
 ### build
-docker-compose -f docker-compose.development.yml up -d --build
+docker-compose -f docker-compose.development.yml up -d --build --remove-orphans
 
 ### check
 docker-compose -f docker-compose.development.yml ps -a
