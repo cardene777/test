@@ -1,6 +1,13 @@
 # test
 - django test repository
 
+
+### docker clean
+```
+docker rm $(docker ps -q) -f
+docker rmi $(docker images -q) -f
+```
+
 ### chmod
 ```
 chmod +x entrypoint.sh
