@@ -7,7 +7,7 @@ django test repository
 docker-compose -f docker-compose.development.yml up -d --build --remove-orphans
 
 ### check
-docker-compose -f docker-compose.yml ps -a
+docker-compose -f docker-compose.development.yml ps -a
 
 ### db
 docker-compose -f docker-compose.development.yml exec django python manage.py flush --no-input  
