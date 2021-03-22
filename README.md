@@ -42,3 +42,8 @@ docker-compose -f docker-compose.yml exec django python manage.py collectstatic 
 docker-compose -f docker-compose.yml exec django python manage.py createsuperuser  
 ```
 http://localhost:1337/admin/login/
+
+### all delete
+```
+docker-compose -f docker-compose.yml down --rmi all --volumes --remove-orphans
+```
