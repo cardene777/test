@@ -37,6 +37,11 @@ docker-compose -f docker-compose.yml exec django python manage.py migrate
 docker-compose -f docker-compose.yml exec django python manage.py collectstatic --no-input --clear
 ```
 
+### add base data
+```
+python3 app/manage.py loaddata data.json
+```
+
 ### admin
 ```
 docker-compose -f docker-compose.yml exec django python manage.py createsuperuser  
