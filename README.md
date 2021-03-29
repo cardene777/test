@@ -6,6 +6,7 @@
 ```
 docker rm $(docker ps -q) -f
 docker rmi $(docker images -q) -f
+docker volume rm $(docker volume ls -qf dangling=true)
 ```
 
 ### chmod
